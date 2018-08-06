@@ -63,7 +63,7 @@ fw-shipped-$(CONFIG_TOUCHSCREEN_UNIFIED_DRIVER_4) += $(synaptics_firmware)
 endif
 
 fw-shipped-$(CONFIG_TOUCHSCREEN_MELFAS_MMS438)		+= tsp_melfas/mms438_j7x.fw
-fw-shipped-$(CONFIG_TOUCHSCREEN_BT541)		+= tsp_zinitix/bt541_GP.fw
+#fw-shipped-$(CONFIG_TOUCHSCREEN_BT541)		+= tsp_zinitix/bt541_GP.fw
 fw-shipped-$(CONFIG_GRIP_TC305K)				+= coreriver/tc305k_GP.fw
 
 fw-shipped-$(CONFIG_ACENIC) += $(acenic-objs)
