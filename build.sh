@@ -31,7 +31,6 @@ echo ''
 fi
 sleep 1s 
 echo ''
-cd android_kernel_samsung_grandpplteser
 echo ''
 LIN=~/arm-cortex_a7-linux-gnueabihf-linaro_4.9
 if [ ! -d "$LIN" ]; then
@@ -52,8 +51,12 @@ echo ''
 echo '==================================='
 make ARCH=arm mt6737t-grandpplte_defconfig
 make -j5 ARCH=arm CROSS_COMPILE=~/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
-cp arch/arm/boot/zImage '/home/hb72k/kernel'
-find . -name '*ko' -exec cp '{}' '/home/hb72k/kernel' \;
+echo ''
+echo ''
+eval echo "~$USER" 
+echo ''
+cp arch/arm/boot/zImage '/home/$USER/kernel'
+find . -name '*ko' -exec cp '{}' '/home/$USER/kernel' \;
 
 #FIN
 echo ''
